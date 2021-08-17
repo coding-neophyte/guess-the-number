@@ -22,5 +22,8 @@ submitGuess.addEventListener('click', () => {
     } else {
         highOrLow.textContent = 'too low';
     }
+    if (guessesRemaining === 0) {
+        submitGuess.disabled = true;
 
+    }
 });
