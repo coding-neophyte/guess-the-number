@@ -17,6 +17,7 @@ submitGuess.addEventListener('click', () => {
     let userGuess = Number(numberInput.value);
     if (compareNumbers(userGuess, correctAnswer) === 0) {
         highOrLow.textContent = 'just right';
+        winOrLose.textContent = 'You Win';
     } else if (compareNumbers(userGuess, correctAnswer) === 1) {
         highOrLow.textContent = 'too high';
     } else {
@@ -24,6 +25,7 @@ submitGuess.addEventListener('click', () => {
     }
     if (guessesRemaining === 0) {
         submitGuess.disabled = true;
+        winOrLose.textContent = 'You lose, no more guesses left';
 
     }
 });
