@@ -5,9 +5,10 @@ const submitGuess = document.getElementById('guess-button');
 const numOfGuesses = document.getElementById('number-of-guesses');
 const highOrLow = document.getElementById('high-low');
 const winOrLose = document.getElementById('win-lose');
+const resetButton = document.getElementById('reset');
 
 let correctAnswer = Math.ceil(Math.random() * 20);
-let guessesRemaining = 3;
+let guessesRemaining = 4;
 
 
 submitGuess.addEventListener('click', () => {
@@ -28,4 +29,8 @@ submitGuess.addEventListener('click', () => {
         winOrLose.textContent = 'You lose, no more guesses left';
 
     }
+});
+
+resetButton.addEventListener('click', () => {
+    location.reload();
 });
