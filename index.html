@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&family=Klee+One&family=Rampart+One&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -23,18 +34,19 @@
             <img class="main-logo" src="./assets/alchemy-logo.png" />
         </section>
         <div>
-            <h1> Guess The Number</h1>
-            <div> You have three tries to guess the magic number between 1 -20 in the input box below</div>
+            <h1 id="guess-headline"> Guess The Number</h1>
+            <div id="instructions"> You have three tries to guess the magic number between 1 -20 in the input box below
+            </div>
             <input type="number" id="number-input">
-            <button id="guess-button">Submit Guess</button>
+            <button id="guess-button">Guess</button>
             <button id="reset"> Reset </button>
         </div>
-        Guesses Left:
-        <div id="number-of-guesses"> - </div>
-        High or Low:
-        <div id="high-low"> - </div>
-        Result:
-        <div id="win-lose"> - </div>
+        <p class="display">Guesses Left:</p>
+        <div id="number-of-guesses" class="dash"> - </div>
+        <p class="display"> High or Low:</p>
+        <div id="high-low" class="dash"> - </div>
+        <p class="display">Result:</p>
+        <div id="win-lose" class="dash"> - </div>
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
